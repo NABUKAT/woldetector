@@ -15,7 +15,7 @@
 
 #include <pcap.h>
 
-//gloval
+//global
 char *nwinterface;
 char *strcommand;
 
