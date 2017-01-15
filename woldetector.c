@@ -49,7 +49,7 @@ void packet_pro(u_char *user, struct pcap_pkthdr *header, const u_char *packet){
     int i;
     int cnt = 0;
     for(i=0; i<6; i++){
-        if(payload[0] == 0xFF && macaddr[i] == payload[6+i]){
+        if(payload[i] == 0xFF && macaddr[i] == payload[6+i]){
             cnt++;
         }
     }
